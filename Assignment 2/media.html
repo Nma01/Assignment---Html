@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Media</title>
+  </head>
+  <body>
+
+    <p><a href="./indexx.html">Home Page</a></p>
+    <p><a href="./table.html">Check out table.html</a></p>
+    <h1>HTML Media</h1>
+    <h2>Image</h2>
+    <p>Resize the brower to see different versions of me</p>
+
+    <picture>
+      <source media="(min-width:950px)" srcset="./assets/images/tradd.jpg" width="400" height="500px" alt="image in traditional attire"/>
+      <source media="(min-width:650px)" srcset="./assets/images/corporate.jpeg" width="200px" height="500px" alt="image in corporate attire"/>
+      <source media="(min-width:465px)" srcset="./assets/images/littleMe.jpg" width="300" alt="image of my young self"/>
+      <img src="./assets/images/me.png" alt="my image" style="width: auto" />
+    </picture>
+
+    <hr />
+    <h2>Audio</h2>
+    <p>Listen to my biography by clicking the play button below</p>
+    <audio controls>
+      <source src="./media/myBio.mp3" type="audio/mp3" />
+    </audio>
+
+    <hr />
+
+    <h2>Video</h2>
+    <p>Watch the video by clicking the play button below</p>
+    <video width="370" height="250" controls>
+      <source src="./media/myBio.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
