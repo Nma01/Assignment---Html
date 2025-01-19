@@ -15,6 +15,7 @@ body {
 }
 
 .right-container {
+    /* background-color: rebeccapurple; */
   margin: 5% auto;
   padding: 5%;
   max-width: 900px;
@@ -137,13 +138,14 @@ i {
 
 @media screen and (min-width: 992px) {
     .left-container {
+        /* background-color: red; */
   display: block;
     margin: 5% auto;
     padding: 5%;
 
 }
   .full-container {
-    max-width: 1800px;
+    max-width: 1300px;
     margin: 5% auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -151,17 +153,18 @@ i {
   }
 
   .left-content{
-    margin: 150px 0;
+    margin: 220px 0;
   }
 
   .left-content img{
     width: 100%;
   }
 
-  .left-content h1{
-    font-size: 3rem;
+  .left-content h2{
+    font-size: 2.5rem;
     margin: 50px 0 ;
     text-align: center;
+    font-weight: 500;
   }
 
 
@@ -177,7 +180,7 @@ i {
   }
 
   form > div {
-    margin: 17px 0;
+    margin: 5px 0;
   }
 
   .grid-item:last-child {
