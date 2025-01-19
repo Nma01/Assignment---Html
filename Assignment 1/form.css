@@ -14,12 +14,10 @@ body {
   font-family: 'Poppins', serif;
 }
 
-.container {
-  /* background-color: rgb(164, 96, 96); */
-  /* border: 1px solid black; */
+.right-container {
   margin: 5% auto;
   padding: 5%;
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 header h3 {
@@ -27,7 +25,7 @@ header h3 {
   text-align: center;
 }
 header h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
   padding: 15px 0 5px 0;
   letter-spacing: -1px;
@@ -59,13 +57,13 @@ select {
   padding: 15px 25px;
   font-size: var(--para_size);
   border: none;
-  outline: none; 
+  outline: none;
 }
 input:focus,
 select:focus {
   border-radius: 12px;
   border: 3px solid var(--blue);
-  outline: none; 
+  outline: none;
 }
 
 input::placeholder {
@@ -100,30 +98,102 @@ button {
 
 i {
   color: var(--blue);
+
 }
 
 .socials {
-    display: none;
+  display: none;
+}
+
+.left-container {
+  display: none;
 }
 
 /* media queries */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    form{
-        /* background: #744c4c; */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-    }
+  .left-container {
+    display: none;
+  }
 
-    form > div {
-        margin: 5px 0;
-    }
+  form {
+    /* background: #744c4c; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
 
-    .grid-item:last-child{
-        grid-column: 1/-1;
-    }
+  form > div {
+    margin: 5px 0;
+  }
 
-    .consent{
-        margin: 30px 0 20px 0;
-    }
+  .grid-item:last-child {
+    grid-column: 1/-1;
+  }
+
+  .consent {
+    margin: 30px 0 20px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    .left-container {
+  display: block;
+    margin: 5% auto;
+    padding: 5%;
+
+}
+  .full-container {
+    max-width: 1800px;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .left-content{
+    margin: 150px 0;
+  }
+
+  .left-content img{
+    width: 100%;
+  }
+
+  .left-content h1{
+    font-size: 3rem;
+    margin: 50px 0 ;
+    text-align: center;
+  }
+
+
+  footer{
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  form > div {
+    margin: 17px 0;
+  }
+
+  .grid-item:last-child {
+    grid-column: 1/-1;
+  }
+
+  .consent {
+    margin: 30px 0 20px 0;
+  }
+
+  .socials {
+  display: block;
+  text-align: center;
+  
+} 
+.socials i{
+    margin: 70px 8px 20px 8px;
+}
 }
