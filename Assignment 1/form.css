@@ -136,7 +136,7 @@ i {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1163px) {
     .left-container {
         /* background-color: red; */
   display: block;
@@ -149,6 +149,7 @@ i {
     margin: 5% auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 
   }
 
@@ -195,8 +196,14 @@ i {
   display: block;
   text-align: center;
   
+  
 } 
 .socials i{
-    margin: 70px 8px 20px 8px;
+    margin: 30px 8px 20px 8px;
+    
+}
+
+.socials i:hover{
+    cursor: pointer;
 }
 }
